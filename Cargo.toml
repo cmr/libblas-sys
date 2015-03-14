@@ -1,0 +1,17 @@
+[package]
+
+name = "libblas-sys"
+version = "0.0.1"
+authors = ["Corey Richardson <corey@octayn.net>"]
+links = "blas"
+build = "build.rs"
+repository = "https://github.com/cmr/libblas-sys"
+license = "BSL-1.0"
+description = "Native bindings to BLAS/LAPACK"
+
+[lib]
+name = "libblas-sys"
+path = "lib.rs"
+
+[dependencies]
+libc = "*"
